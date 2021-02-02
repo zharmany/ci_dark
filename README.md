@@ -1,5 +1,7 @@
 # CI Dark
 
+This is my fork of [chuling/ci_dark](https://github.com/chuling/ci_dark). It tweaks the appearance of the StatusLine and TabLine for a bit better differentiation.
+
 ## Preview
 
 ### Vim/Neovim
