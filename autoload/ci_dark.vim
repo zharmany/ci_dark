@@ -46,9 +46,24 @@ let s:colors.none = 'NONE'
 let s:colors.underline = 'underline'
 
 let s:colors.bold = 'NONE'
+let s:colors.italic = 'NONE'
+let s:colors.bolditalic = 'NONE'
+
 if get(g:, 'ci_dark_enable_bold', 0) == 1
   let s:colors.bold = 'bold'
+  let s:colors.bolditalic = 'bold'
 endif
+
+if get(g:, 'ci_dark_enable_italic', 0) == 1
+    let s:colors.italic = 'italic'
+    let s:colors.bolditalic = 'italic'
+endif
+
+if (get(g:, 'ci_dark_enable_bold', 0) == 1)
+    \ && (get(g:, 'ci_dark_enable_italic', 0) == 1)
+    let s:colors.bolditalic = 'bold,italic'
+endif
+
 
 function! ci_dark#get_colors() abort
   return s:colors

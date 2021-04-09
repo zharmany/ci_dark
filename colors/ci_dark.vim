@@ -85,14 +85,14 @@ call s:HL('ErrorMsg', s:colors.red, s:colors.none)
 " ----------------------------------------------------
 call s:HL('VertSplit', s:colors.split, s:colors.none)
 " ----------------------------------------------------
-call s:HL('Folded', s:colors.background, s:colors.magenta, s:colors.bold)
+call s:HL('Folded', s:colors.gray, s:colors.none, s:colors.bolditalic)
 call s:HL('FoldColumn', s:colors.magenta, s:colors.none, s:colors.bold)
 " ----------------------------------------------------
 call s:HL('SignColumn', s:colors.none, s:colors.none)
 call s:HL('IncSearch', s:colors.background, s:colors.magenta)
 call s:HL('LineNr', s:colors.gray, s:colors.none)
 call s:HL('CursorLineNr', s:colors.foreground, s:colors.none)
-call s:HL('MatchParen', s:colors.background, s:colors.red)
+call s:HL('MatchParen', s:colors.background, s:colors.gray)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:colors.foreground, s:colors.none)
 call s:HL('MoreMsg', s:colors.green, s:colors.none)
